@@ -12,111 +12,127 @@
 
 ## 最新 · Latest
 
-## 2026-10-04
+## 2026-10-05
 
-- [Agent Error Dataset: Scaling 50,000 Error-Diagnosis Pairs for Failure Analysis and Error-Aware Post-Training](https://arxiv.org/abs/2609.40111)
-  - 中文：失败可训，匹配重放从 18.4% 到 51.1%。
-  - English: Failures are trainable; matched replay rises from 18.4% to 51.1%.
+- [Multi-Agent Computer Use](https://arxiv.org/abs/2606.01533)
+  - 中文：CMU 多 agent CUA，Odysseys 8.5→34.0，长程 CUA 默认改编排｜不要并进单 agent GUI grounding，也不绑 CMU A2
+  - English: CMU multi-agent CUA lifts Odysseys 8.5→34.0; long-horizon CUA should rewrite the schedule by default—not single-agent GUI grounding, and not tied to CMU A2.
 
-- [AuraForge: Scaling Security Supervision for Training Coding Agents](https://arxiv.org/abs/2610.00850)
-  - 中文：安全测可合成，假阳大降。
-  - English: Security tests can be synthesized, and false positives drop sharply.
+- [The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams](https://arxiv.org/abs/2608.23541)
+  - 中文：ICML：全解交流一轮抹平多样性，首轮互评 57% 改差｜不要并进「多 agent 一律无用」的等预算否定论
+  - English: ICML: one full-solution exchange flattens diversity; first-round peer review makes 57% worse—not an equal-budget claim that multi-agent is always useless.
 
-- [ZoneClaw: Mitigating Persistent Memory Attacks by Establishing Memory-Zoning in OpenClaw-Style Computer-Use Agents](https://arxiv.org/abs/2610.00450)
-  - 中文：记忆分区，持久记忆攻击大降。
-  - English: Memory zoning cuts persistent-memory attacks sharply.
+- [Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227)
+  - 中文：AI2/UW：harness 进化在等预算下 67.4 < 并行采样 72.3｜不要并进 harness 学习类（2609.35738）
+  - English: AI2/UW: under equal budget, harness evolution scores 67.4 vs parallel sampling 72.3—not merged with harness-learning work (2609.35738).
 
-- [Covert Assistance: Helpful LLM Agents Evade Oversight in Multi-Agent Systems](https://arxiv.org/abs/2609.39050)
-  - 中文：善意协助也会泄露凭证。
-  - English: Well-meaning assistance can still leak credentials.
+- [Despite Instructions: Frontier Agents Improvise Covert Channels at Test Time](https://arxiv.org/abs/2609.32701)
+  - 中文：1 位反馈就长出隐蔽信道，98.8% vs 25%，监控失效｜不要并进 Covert Assistance 2609.39050
+  - English: One bit of feedback grows a covert channel (98.8% vs 25%); monitoring fails—not merged with Covert Assistance 2609.39050.
 
-- [Continuous Process-Level Evaluation for Evolving Enterprise AI Agent Skills](https://arxiv.org/abs/2610.01833)
-  - 中文：终态过关仍有过程偏差。
-  - English: Passing the end state still leaves process drift.
+- [Trojan Hippo Bench: A Dynamic Benchmark for Persistent Memory Attacks and Defenses in LLM Agents](https://arxiv.org/abs/2605.01970)
+  - 中文：ETH/Berkeley：持久记忆投毒最高 100% ASR，潜伏 100 会话仍生效｜不要并进 ZoneClaw 2610.00450
+  - English: ETH/Berkeley: persistent memory poisoning reaches 100% ASR and still works after 100 dormant sessions—not merged with ZoneClaw 2610.00450.
 
-- [ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research](https://arxiv.org/abs/2610.02202)
-  - 中文：科学检索 agent 不高于 embedding。
-  - English: A scientific retrieval agent does not beat embeddings.
+- [Can Agent Memory Systems Track Evolving State?](https://arxiv.org/abs/2608.19652)
+  - 中文：UIUC：记忆追当前态，准确率 1.8×，状态结构贡献 +15–32｜不要并进 PoS 2610.01415 和长上下文 QA
+  - English: UIUC: memory that tracks the current state gets 1.8× accuracy; state structure adds +15–32—not merged with PoS 2610.01415 or long-context QA.
 
-- [Harness Annealing: Learning to Act with Less External Control](https://arxiv.org/abs/2610.01235)
-  - 中文：harness 控制可内化。
-  - English: Harness control can be internalized.
+- [CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas](https://arxiv.org/abs/2604.15267)
+  - 中文：ICML：LLM 单次博弈全背叛，合同机制回收 80% 社会最优｜不要并进单 agent 价值对齐评测
+  - English: ICML: LLMs fully defect in one-shot games; contract mechanisms recover 80% of the social optimum—not single-agent value-alignment evals.
 
-- [RISED: RubrIcs for agentic multi-environment Selection and sElf-Distillation](https://arxiv.org/abs/2610.00979)
-  - 中文：rubric 选数加自蒸馏。
-  - English: Rubrics select the examples, then self-distillation.
+- [When Successful Strategies Fail: Adaptation to Environmental Novelty in Terminal Agents](https://arxiv.org/abs/2609.33870)
+  - 中文：环境新颖性让终端 agent pass@1 84.1→53.4｜不要并进跨榜迁移稿 2610.00890
+  - English: Environmental novelty drops terminal-agent pass@1 from 84.1 to 53.4—not merged with cross-benchmark transfer 2610.00890.
 
-- [ContextRender: From Execution Dependencies to Agent Context](https://arxiv.org/abs/2609.37743)
-  - 中文：按执行依赖渲染上下文。
-  - English: Render context from execution dependencies.
+- [SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation](https://arxiv.org/abs/2608.21500)
+  - 中文：EMNLP：token 级 on-policy 蒸馏把自适应注入 ASR 94.0%→9.0%｜不要并进 UCM 和通用 OPD 训练稿
+  - English: EMNLP: token-level on-policy distillation cuts adaptive-injection ASR from 94.0% to 9.0%—not merged with UCM or generic OPD training papers.
 
-- [Rational Clarification by Assistive Agents via Value-of-Information Reasoning](https://arxiv.org/abs/2609.37588)
-  - 中文：用信息价值决定问还是做。
-  - English: Use value of information to decide whether to ask or act.
+- [AgentBoundary: Counterfactual Evaluation of Safety in Tool-Using LLM Agents](https://arxiv.org/abs/2609.33658)
+  - 中文：北大：GPT-5.5 拦越权 99.5%，风险外观授权任务只完成 28.7%｜不要并进对话越狱拒答基准
+  - English: PKU: GPT-5.5 blocks over-privilege at 99.5%, but completes only 28.7% of risk-looking authorized tasks—not a chat jailbreak-refusal bench.
 
-- [Chaining Skills to Hijack LLM Agents](https://arxiv.org/abs/2610.01564)
-  - 中文：skill 链可被劫持。
-  - English: Skill chains can be hijacked.
+- [Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning](https://arxiv.org/abs/2608.30686)
+  - 中文：EMNLP：投毒 ASR 由用户任务类型决定，跑测试 45.5% vs 修 bug 8.6%｜不要并进 skill 供应链和网页注入
+  - English: EMNLP: poison ASR depends on the user task type—45.5% on running tests vs 8.6% on bugfix—not skill supply-chain or web injection.
 
-- [My FAULT: Self-Diagnosis as Credit Assignment in Self-Evolving Agentic Reinforcement Learning](https://arxiv.org/abs/2610.01161)
-  - 中文：自诊断转成逐步信用。
-  - English: Self-diagnosis becomes step-level credit.
+- [Harness Learning Enables Generalizable Test-Time Adaptation](https://arxiv.org/abs/2609.35738)
+  - 中文：CMU：训出的 4B harness proposer 在未见任务族上胜过 35B 教师（0.62 vs 0.56）｜不要并进同基准搜索型 harness 进化
+  - English: CMU: a trained 4B harness proposer beats a 35B teacher on unseen task families (0.62 vs 0.56)—not same-benchmark search-style harness evolution.
 
-- [Beyond Memory: Harnessing Long-Horizon Agents with Explicit Belief States](https://arxiv.org/abs/2610.01415)
-  - 中文：显式信念态。
-  - English: An explicit belief state.
+- [WHALE: A Simple Recipe for Joint Harness-Weight Optimization](https://arxiv.org/abs/2609.00196)
+  - 中文：权重 × harness 交替优化，只用 29% 的 rollout 超过分阶段优化｜不要并进纯提示优化和通用 RLVR
+  - English: Alternating weight×harness optimization beats staged training with only 29% of the rollouts—not pure prompt opt or generic RLVR.
 
-- [It Takes Workflows to Evolve Better Workflows](https://arxiv.org/abs/2610.01026)
-  - 中文：工作流共进化。
-  - English: Workflows co-evolve.
+- [Untrusted Content Masking for Web Agents with Security Guarantees](https://arxiv.org/abs/2607.05277)
+  - 中文：ETH：DOM 结构遮蔽不可信区，加强版 WASP 0% ASR｜不要并进训练型注入防御；写清防不了数据流篡改
+  - English: ETH: DOM-structure masking of untrusted regions reaches 0% ASR on a hardened WASP; it does not stop data-flow tampering—not training-time injection defense.
 
-- [Right Answers, Wrong States: Hidden Information Failures in Multi-Agent Collaboration](https://arxiv.org/abs/2610.01244)
-  - 中文：答对不等于状态可靠。
-  - English: A right answer does not mean the state is reliable.
+- [FORTIS: Benchmarking Over-Privilege in Agent Skills](https://arxiv.org/abs/2605.09163)
+  - 中文：USC/JHU（Chaowei Xiao）：skill 层本身是越权源，10 个模型选 skill 失败 35.5–52.7%，两段合计成功最多 14.3%｜不要并进 TrustProbe 2609.39065、APEX 2610.01564 和 AgentBoundary 2609.33658
+  - English: USC/JHU (Chaowei Xiao): the skill layer itself is an over-privilege source; 10 models fail skill selection 35.5–52.7%, two-stage success at most 14.3%—not TrustProbe, APEX, or AgentBoundary.
 
-- [Cross-Benchmark Transfer from RL on Agentic Coding Tasks](https://arxiv.org/abs/2610.00890)
-  - 中文：coding RL 跨榜迁移。
-  - English: Coding RL transfers across benchmarks.
+- [FlowBank: Query-Adaptive Agentic Workflows Optimization through Precompute-and-Reuse](https://arxiv.org/abs/2606.11290)
+  - 中文：Furong 组：互补工作流库加路由，比 AFlow 高 3.00 分｜不要并进 FloWright 和 Component Routing
+  - English: Furong group: a complementary workflow bank plus routing beats AFlow by 3.00 points—not FloWright or Component Routing.
 
-- [DAYJOB: A Benchmark for Long-Horizon Professional Work](https://arxiv.org/abs/2610.01306)
-  - 中文：长程专业工作很难。
-  - English: Long-horizon professional work is hard.
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://arxiv.org/abs/2605.06614)
+  - 中文：UIUC/Google：skill 策展可以训，8B 胜过 Gemini-2.5-Pro 当策展器｜不要并进 GSO 和 DeFA
+  - English: UIUC/Google: skill curation is trainable; an 8B curator beats Gemini-2.5-Pro—not GSO or DeFA.
 
-- [Do Self-Evolving Skills Generalize to Held-Out Tasks?](https://arxiv.org/abs/2609.39148)
-  - 中文：skill 进化多数带不到测集。
-  - English: Most skill evolution does not carry to the held-out set.
+- [SWE-chat: Coding Agent Interactions From Real Users in the Wild](https://arxiv.org/abs/2604.20779)
+  - 中文：COLM：真实用户 coding agent 代码只有 59% 进 commit｜不要并进离线 SWE 基准
+  - English: COLM: only 59% of real-user coding-agent code reaches a commit—not offline SWE benches.
 
-- [DeFA: Dependency-Guided Failure Attribution for LLM Agents](https://arxiv.org/abs/2610.01256)
-  - 中文：失败归因看依赖图。
-  - English: Failure attribution follows the dependency graph.
+- [Benchmarking Open-Ended Multi-Agent Coordination in Language Agents](https://arxiv.org/abs/2606.08340)
+  - 中文：Edinburgh/UCL：LLM 团队协调分逼近 10 亿步 MARL，断通信 17.5→5.3｜不要并进 MACU 和 CoopEval
+  - English: Edinburgh/UCL: LLM team coordination scores approach billion-step MARL; cutting communication drops 17.5→5.3—not MACU or CoopEval.
 
-- [Not All Experience Belongs in the Weights: Component Routing for Self-Improving GUI Agents](https://arxiv.org/abs/2610.01787)
-  - 中文：经验按组件路由。
-  - English: Experience is routed by component.
+- [StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing](https://arxiv.org/abs/2608.24777)
+  - 中文：EMNLP：步级执行前护栏，ASR 相对 −77.3%、效用 −2.8｜不要并进 AgentBoundary 评测
+  - English: EMNLP: step-level pre-execution guardrails cut ASR by 77.3% relative with −2.8 utility—not AgentBoundary eval.
 
-- [Sharpening Tax in Post-Training](https://arxiv.org/abs/2610.01509)
-  - 中文：post-train 削掉覆盖，不并 Harness Annealing。
-  - English: Post-training shaves off coverage; not merged with Harness Annealing.
+- [CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents](https://arxiv.org/abs/2607.05378)
+  - 中文：清华：压缩上下文的 agent RL，SWE-V 比推理时压缩高 +6.6｜不要并进通用长上下文和 RLVR 训练稿
+  - English: Tsinghua: agent RL with context compaction beats inference-time compaction by +6.6 on SWE-V—not generic long-context or RLVR training papers.
 
-- [Pay for the Fault, Not the Flow: Label-Free In-Flow Multi-Agent Workflow Optimization](https://arxiv.org/abs/2610.01017)
-  - 中文：按无标签代价定粒度，威廉玛丽 / NEC，不并 FloWright。
-  - English: Granularity set by unlabeled cost, William & Mary / NEC; not merged with FloWright.
+- [Can Agents Trust Their Skills? Uncovering Unsafe Chains of Trust in Skill-Based LLM Agents](https://arxiv.org/abs/2609.39065)
+  - 中文：中科院信工所：skill 准入通道本身是漏洞，直接提示只复现 31.7%｜不要并进 APEX 2610.01564 和仓库投毒
+  - English: CAS IIE: the skill admission channel itself is a vulnerability; direct prompting only reproduces 31.7%—not APEX 2610.01564 or repo poisoning.
 
-- [Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models](https://arxiv.org/abs/2610.02142)
-  - 中文：关键词评测假开。
-  - English: Keyword evals fail open.
+- [VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks](https://arxiv.org/abs/2609.23570)
+  - 中文：SIAT/阿里：coding agent 记忆增益 1.1–4.5 分，置信区间全跨零｜不要并进 StateMemBench 和对话记忆榜
+  - English: SIAT/Alibaba: coding-agent memory gains 1.1–4.5 points with CIs that all cross zero—not StateMemBench or dialogue-memory boards.
 
-- [GraphForge: Training Working Agents with Graph-Anchored Workspace Synthesis](https://arxiv.org/abs/2609.38923)
-  - 中文：真文件证据图生成任务和 rubric。
-  - English: Real-file evidence graphs generate the task and the rubric.
+- [How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text](https://arxiv.org/abs/2609.40295)
+  - 中文：UMD/Mohit Iyyer：800 个模型测出数据充足后 AI 网页 token 价值为负，新 scaling law 外推误差低 41%｜不要并进 FinePhrase（2604.13977）和 model-collapse 研究
+  - English: UMD/Mohit Iyyer: across 800 models, AI web tokens turn negative once data is plentiful; a new scaling law cuts extrapolation error 41%—not FinePhrase or model-collapse work.
 
-- [When Users Change Their Minds: Measuring and Repairing Intent Drift in LLM Agents](https://arxiv.org/abs/2609.32520)
-  - 中文：被替换的用户意图还在影响动作。
-  - English: A replaced user intent still steers the actions.
+- [Broken Symmetry in BF16 Attention: Why FlashAttention Gradients Blow Up Late in Training](https://arxiv.org/abs/2609.34272)
+  - 中文：Rutgers/CMU（Eric Xing）：BF16 FA3 梯度泄漏均值 key，GProj 把 q 梯度误差 219%→0.34%｜不要并进 Muon / 学习率类不稳定研究
+  - English: Rutgers/CMU (Eric Xing): BF16 FA3 gradients leak the mean key; GProj cuts q-gradient error from 219% to 0.34%—not Muon or LR-instability work.
 
-- [Prefill-Free Cross-Family KV Cache Transfer for Heterogeneous Multi-Agent LLMs](https://arxiv.org/abs/2609.32259)
-  - 中文：只改异构多 agent 的交接成本。
-  - English: Only the handoff cost of heterogeneous multi-agent systems changes.
+- [Do We Really Need KL Divergence for On-Policy Distillation of Large Language Models?](https://arxiv.org/abs/2609.33791)
+  - 中文：清华 LeapLab/黄高：OPD 用方向 ±1 即可复现 KL，<1.5% 高分歧 token 决定成败｜不要并进 2609.35259 和 2610.02179
+  - English: Tsinghua LeapLab/Gao Huang: OPD with ±1 direction recovers KL; <1.5% high-disagreement tokens decide outcomes—not 2609.35259 or 2610.02179.
+
+- [EasyPPO: Stabilizing the Critic Is Key](https://arxiv.org/abs/2609.36802)
+  - 中文：Berkeley/Princeton：PPO 不稳源于 critic，actor-only 过滤 + 噪声归一化后三种子零崩溃｜不要并进 Trust the Critic More（2609.39247）
+  - English: Berkeley/Princeton: PPO instability comes from the critic; actor-only filtering plus noise normalization yields zero crashes across three seeds—not Trust the Critic More.
+
+- [How Can We Synthesize High-Quality Pretraining Data? A Systematic Study of Prompt Design, Generator Model, and Source Data](https://arxiv.org/abs/2604.13977)
+  - 中文：Hugging Face，COLM 2026：合成预训练改写器 1B 反超 27B，FinePhrase 生成成本降 30×｜不要并进野生 AI 文本研究（2609.40295）和 PPT（2609.39827）
+  - English: Hugging Face, COLM 2026: a 1B synthetic pretraining rewriter beats a 27B; FinePhrase cuts generation cost 30×—not wild AI-text work or PPT.
+
+- [Trust the Critic More](https://arxiv.org/abs/2609.39247)
+  - 中文：Stanford/Tengyu Ma：critic 就绪后截断 rollout，达到 GRPO 峰值少用 2.5× 解码 FLOPs｜不要并进 EasyPPO（2609.36802）
+  - English: Stanford/Tengyu Ma: truncate rollouts once the critic is ready; reach GRPO peak with 2.5× fewer decode FLOPs—not EasyPPO.
+
+- [The Quality-Utility Paradox: Why High-Reward Data Impairs Small Model Mathematical Reasoning](https://arxiv.org/abs/2606.16152)
+  - 中文：清华深研院/MSRA，ICML 2026：RM 分更高的 Oracle 蒸馏数据，小模型反而学得更差｜不要并进 KL-free OPD（2609.33791）和偏好蒸馏 reject 研究
+  - English: Tsinghua AIR/MSRA, ICML 2026: higher-RM Oracle distillation data makes small models learn worse—not KL-free OPD or preference-distill reject work.
 
 ## 关于 · About
 
