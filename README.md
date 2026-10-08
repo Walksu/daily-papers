@@ -12,6 +12,129 @@
 
 ## 最新 · Latest
 
+## 2026-10-08
+
+- [SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)
+  - 中文：悉尼大学/港浸会，NeurIPS：只在「关键路径 + 重探索 + 对齐」比串行便宜时才并行，墙钟比 Claude Code 快 2.6×｜不要并进 AECP 2610.06481 和 GitSwarm 2610.04862
+  - English: Sydney/HKBU, NeurIPS: parallelize only when critical path plus re-exploration plus alignment beats serial cost; 2.6× faster wall-clock than Claude Code—not AECP 2610.06481 or GitSwarm 2610.04862.
+
+- [Stateless Language Agents: Scaling Long-Horizon Automated Research](https://arxiv.org/abs/2610.07625)
+  - 中文：Stanford Olukotun：研究状态归 harness、agent 无状态，追平最强基线少用 93% token｜不要并进 Sentry 2610.02994 和 MIRA 2610.02525
+  - English: Stanford Olukotun: research state lives in the harness and agents are stateless; matches the strongest baseline with 93% fewer tokens—not Sentry 2610.02994 or MIRA 2610.02525.
+
+- [Why Search When You Can Transfer? Amortized Agentic Workflow Design from Structural Priors](https://arxiv.org/abs/2604.25012)
+  - 中文：CMU FOCAL：工作流单次生成免搜索，85.34 对 AFlow 82.25，184 分钟降到 10 秒以内｜不要并进 2609.02264 和 FlowBank 2606.11290
+  - English: CMU FOCAL: one-shot workflow generation with no search; 85.34 vs AFlow 82.25, from 184 minutes to under 10 seconds—not 2609.02264 or FlowBank 2606.11290.
+
+- [Who is the Agent to Blame? Localizing Faithfulness and Citation Mistakes in Agentic Deep Research](https://arxiv.org/abs/2608.24306)
+  - 中文：Bar-Ilan/UNC，EMNLP：逐调用定位深度研究错误，AI-Q 84.7% 出在 orchestrator｜不要并进 DeFA 2610.01256 和 2606.03032
+  - English: Bar-Ilan/UNC, EMNLP: localizes deep-research errors call by call; 84.7% of AI-Q errors come from the orchestrator—not DeFA 2610.01256 or 2606.03032.
+
+- [MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems](https://arxiv.org/abs/2607.28527)
+  - 中文：Cornell：推理期拓扑自进化，均分 74.0（+5.8），去掉开局规划掉到 57.5｜不要并进 SHIFT 2610.04137 和 ReActNet 2609.05774
+  - English: Cornell: inference-time self-evolving topology; average 74.0 (+5.8), dropping to 57.5 without upfront planning—not SHIFT 2610.04137 or ReActNet 2609.05774.
+
+- [Fork-and-Flush: Escaping Idea Basins in Autoresearch Agents](https://arxiv.org/abs/2610.07447)
+  - 中文：MSR：autoresearch 的想法盆地，分叉加清空对话 0.78 对单次 0.47｜不要并进 2607.12227 和 SLA 2610.07625
+  - English: MSR: idea basins in autoresearch; fork-and-flush scores 0.78 vs 0.47 for a single run—not 2607.12227 or SLA 2610.07625.
+
+- [Self-Retrospection Distillation: Turning Post-hoc Experiences into Prior Foresight](https://arxiv.org/abs/2610.08077)
+  - 中文：Salesforce：事后经验蒸馏成事前预判，2B 从 0.0% 到 60.6%｜不要并进 RISED 2610.00979 和训练线
+  - English: Salesforce: distills post-hoc experience into prior foresight; a 2B model goes from 0.0% to 60.6%—not RISED 2610.00979 or the training line.
+
+- [ServeLearnBench: How Well Can Agents Self-Improve from Serving Experience?](https://arxiv.org/abs/2610.07792)
+  - 中文：CMU Beidi Chen：服务经验自改进基准，规则公开 95.4 对自学 14.1｜不要并进 2606.04315 和 2606.15017
+  - English: CMU Beidi Chen: a benchmark for self-improving from serving experience; 95.4 with rules given vs 14.1 self-learned—not 2606.04315 or 2606.15017.
+
+- [Inducing Task Models from Computer-Use Traces](https://arxiv.org/abs/2608.20319)
+  - 中文：Stanford Diyi Yang/CMU：从操作录像归纳任务模型，步骤吻合 74.9% 对 30.3%，skill +30%｜不要并进 TeleTune 2610.05437
+  - English: Stanford Diyi Yang/CMU: induces task models from computer-use recordings; step match 74.9% vs 30.3%, skills +30%—not TeleTune 2610.05437.
+
+- [Surviving the Router: Optimizing Skill Injections for Retrieval and Execution](https://arxiv.org/abs/2610.08098)
+  - 中文：ELLIS Tübingen：skill 注入先过路由，已有攻击 ASR 掉 87–97%｜不要并进 2605.09163 和 2609.35912
+  - English: ELLIS Tübingen: skill injections must survive the router first; existing attacks lose 87–97% ASR—not 2605.09163 or 2609.35912.
+
+- [Daydreaming: Stealing Hidden Agent Skills through Black-Box Task Interaction](https://arxiv.org/abs/2608.26733)
+  - 中文：Berkeley Popa：只靠任务往返偷 skill，恢复 86.8% 能力，中位数 32 次调用｜不要并进 2609.39065 和 CORSA 2610.08098
+  - English: Berkeley Popa: steals skills through task round-trips alone, recovering 86.8% of capability in a median of 32 calls—not 2609.39065 or CORSA 2610.08098.
+
+- [Prismata: Confining Cross-Site Prompt Injection in Web Agents](https://arxiv.org/abs/2607.08147)
+  - 中文：Berkeley Popa：网页 agent 上下文最小权限，ASR 85.5% 降到 0.7%｜不要并进 2607.05277
+  - English: Berkeley Popa: least-privilege context for web agents cuts ASR from 85.5% to 0.7%—not 2607.05277.
+
+- [RAISED: Self-Distillation for Robustness to Prompt Injection in LLM Agents](https://arxiv.org/abs/2610.06401)
+  - 中文：巴黎综合理工/GDM：自蒸馏防注入，ASR 39.5% 降到 1.0%，受攻击效用 64.0% 升到 80.5%｜不要并进 SecOPD 2608.21500 和训练线
+  - English: École Polytechnique/GDM: self-distillation against injection; ASR 39.5% to 1.0%, utility under attack 64.0% to 80.5%—not SecOPD 2608.21500 or the training line.
+
+- [HarnessSecurity-Bench: Do Security Mechanisms Really Protect Coding Agent Harnesses?](https://arxiv.org/abs/2610.07639)
+  - 中文：中山大学：6 个 coding harness 安全实测，auto-approve 让 ASR 从 29.2% 升到 95.6%｜不要并进 2606.30755 和 CUAWright 2610.04116
+  - English: Sun Yat-sen: security tests on 6 coding harnesses; auto-approve raises ASR from 29.2% to 95.6%—not 2606.30755 or CUAWright 2610.04116.
+
+- [Discovered, Not Designed: Population Evolution for Collaborative and Compute-Intensive Model Discovery](https://arxiv.org/abs/2610.05950)
+  - 中文：Meta：种群协同进化，预训练最佳增益 2.48% 对 0.92%｜不要并进 DarwinX 2608.07545 和训练线
+  - English: Meta: population co-evolution; best pretraining gain 2.48% vs 0.92%—not DarwinX 2608.07545 or the training line.
+
+- [XBridge: Entity-Grounded Latent Bridge for Heterogeneous LLM Communication](https://arxiv.org/abs/2608.11676)
+  - 中文：UIC，NeurIPS：异构隐空间桥加离散锚点，比自然语言通信高 14–21 个点，延迟低 11×｜不要并进 2609.39788 和 2610.03769
+  - English: UIC, NeurIPS: a heterogeneous latent bridge with discrete anchors; 14–21 points above natural-language communication at 11× lower latency—not 2609.39788 or 2610.03769.
+
+- [Decoupled Multi-Agent Orchestration](https://arxiv.org/abs/2610.07556)
+  - 中文：NUS：规划与选人解耦，51.5 对 Conductor 44.0｜不要并进 MIRA 2610.02525 和 AECP 2610.06481
+  - English: NUS: decouples planning from agent selection; 51.5 vs Conductor 44.0—not MIRA 2610.02525 or AECP 2610.06481.
+
+- [Large Language Model Orchestration under Heterogeneous Preferences via Explicit Persona Inference](https://arxiv.org/abs/2610.07587)
+  - 中文：KCL/Harvard：数值后验取代提示词信念，遗憾 2.7–4.4 对 4.5–10.7｜不要并进 2604.15267 和 2610.07556
+  - English: KCL/Harvard: numeric posteriors replace prompted beliefs; regret 2.7–4.4 vs 4.5–10.7—not 2604.15267 or 2610.07556.
+
+- [Persistent Memory in Multi-Agent LLM Inference: What It Costs, What It Buys, and When You Can Tell](https://arxiv.org/abs/2610.07782)
+  - 中文：UCLA：多 agent 推理的持久记忆层零收益（+0.015），检索可达率只有 24%｜不要并进 2609.23570 和 2610.07792
+  - English: UCLA: a persistent memory layer for multi-agent inference yields essentially nothing (+0.015), with only 24% retrieval reachability—not 2609.23570 or 2610.07792.
+
+- [Better, Faster, Stronger: Programmatic Skill Learning Best Reduces Agent Cost](https://arxiv.org/abs/2608.11338)
+  - 中文：JHU：程序化 skill 最省钱，输出 token 少约 65%｜不要并进 VALVE 2609.32990 和 SkillOS 2605.06614
+  - English: JHU: programmatic skills are cheapest, with about 65% fewer output tokens—not VALVE 2609.32990 or SkillOS 2605.06614.
+
+- [Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?](https://arxiv.org/abs/2610.08775)
+  - 中文：Tübingen/KAIST Seong Joon Oh：装瓶能力评测，48/60 低于零样本下界｜不要并进 2609.34262 和训练线蒸馏
+  - English: Tübingen/KAIST Seong Joon Oh: evaluating bottled capabilities; 48 of 60 fall below the zero-shot floor—not 2609.34262 or training-line distillation.
+
+- [Understanding and Enhancing Backdoor Persistency in LLM Agent Post-Training](https://arxiv.org/abs/2610.07510)
+  - 中文：UIUC Daniel Kang，EMNLP Findings：后门熬过 SFT，RL 不降反升｜不要并进 2608.25776 和训练线
+  - English: UIUC Daniel Kang, EMNLP Findings: backdoors survive SFT and grow stronger under RL—not 2608.25776 or the training line.
+
+- [Before Agent Tells The Lie: Has Deception Already Been Represented?](https://arxiv.org/abs/2610.06576)
+  - 中文：上海 AI Lab：欺骗在决策前已可从隐状态读出，AUROC 51.2% 升到 80.0%｜不要并进 2607.26115 和 2610.04083
+  - English: Shanghai AI Lab: deception is readable from hidden states before the decision; AUROC rises from 51.2% to 80.0%—not 2607.26115 or 2610.04083.
+
+- [Balancing Memory Pathways: Analyzing and Improving Memory Utilization in Hybrid LMs](https://arxiv.org/abs/2610.06750)
+  - 中文：UNC/Yale/Mila（Mohit Bansal、Arman Cohan）：混合模型的循环层大半闲置，通路辅助损失让长上下文问答 +8.0｜不要并进 2610.04518 和 2610.08463
+  - English: UNC/Yale/Mila (Mohit Bansal, Arman Cohan): recurrent layers in hybrid models sit mostly idle; a pathway auxiliary loss adds +8.0 on long-context QA—not 2610.04518 or 2610.08463.
+
+- [On-Policy Distillation with Negative-Policy Rollouts](https://arxiv.org/abs/2610.07874)
+  - 中文：NAVER AI Lab：OPD 加负策略 rollout，Qwen3-4B 数学 62.2 升到 70.5｜不要并进 2610.04272 和 2609.33791
+  - English: NAVER AI Lab: on-policy distillation with negative-policy rollouts lifts Qwen3-4B math from 62.2 to 70.5—not 2610.04272 or 2609.33791.
+
+- [UNREAL: Unifying Retrieval and Long-Context with a Single Model](https://arxiv.org/abs/2610.08463)
+  - 中文：NVIDIA（Soudry、Ginsburg）：冻结 LLM 加不到 0.5M 参数当全库检索器，NoLiMa 128K 从 1.0% 到 24.83%｜不要并进 agent 线的记忆与 RAG 评测
+  - English: NVIDIA (Soudry, Ginsburg): a frozen LLM plus under 0.5M parameters becomes a full-corpus retriever; NoLiMa 128K from 1.0% to 24.83%—not agent-line memory and RAG evals.
+
+- [The Assistance Dilemma: Learning to Teach via Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2610.06446)
+  - 中文：ETH（Mrinmaya Sachan）：教学 RL 加迁移后测和硬闸，不加闸时仍有 61% 直接给答案｜不要并进 OnePO 2610.05966 和 agent 评测稿
+  - English: ETH (Mrinmaya Sachan): teaching RL with transfer post-tests and a hard gate; without the gate 61% still hand over the answer—not OnePO 2610.05966 or the agent eval piece.
+
+- [Exploration-Preserving Policy Optimization](https://arxiv.org/abs/2610.04011)
+  - 中文：Mila（Doina Precup）：按惊异度和通过率重分功劳，k=128 覆盖 51.03 对 44.34｜不要并进 2610.00991 和 2610.01509
+  - English: Mila (Doina Precup): reassigns credit by surprisal and pass rate; coverage at k=128 is 51.03 vs 44.34—not 2610.00991 or 2610.01509.
+
+- [TRACE: Rollout-Guided Quantization-Aware Training for FP4 Reinforcement Learning of MoE Language Models](https://arxiv.org/abs/2610.07767)
+  - 中文：阿里 Qwen：rollout 引导的 FP4 QAT，NVFP4 rollout 均分 75.3 超过 BF16 的 74.9｜不要并进 2609.22870 和 2610.07043
+  - English: Alibaba Qwen: rollout-guided FP4 QAT; NVFP4 rollouts average 75.3, above BF16 at 74.9—not 2609.22870 or 2610.07043.
+
+- [Language Models that Play Chess and Explain Their Moves](https://arxiv.org/abs/2610.03695)
+  - 中文：Princeton（Danqi Chen）：自然语言版 Bellman 迭代蒸馏，4B 从 1782 Elo 到 2697｜不要并进 2610.06851 和 agent 自进化稿
+  - English: Princeton (Danqi Chen): natural-language Bellman iteration distillation takes a 4B model from 1782 to 2697 Elo—not 2610.06851 or the agent self-evolution piece.
+
+
 ## 2026-10-07
 
 - [GitSwarm: Decentralized Compounding Inference](https://arxiv.org/abs/2610.04862)
@@ -134,128 +257,30 @@
   - 中文：港中文（深圳），前身 ICML 2026：OnePO 让老师输出到点退场，HealthBench 67.2 超过 SFT+RL 2.7｜不要并进 MOPD 对比（2610.04272）和医疗评测 benchmark
   - English: CUHK(SZ), formerly ICML 2026: OnePO lets the teacher exit at a stop point; HealthBench 67.2 beats SFT+RL by 2.7—not MOPD comparison (2610.04272) or medical eval benches.
 
+- [Dynamic Harness Search: Building Multi-Agent Systems Per-Query via Prediction](https://arxiv.org/abs/2610.04137)
+  - 中文：Google SHIFT（Sercan Arık）：按查询搜多智能体结构，六基准均值 79.9%，比最强基线高 7.2 点｜不要并进 ReActNet 2609.05774 和 CUAWright 2610.04116
+  - English: Google SHIFT (Sercan Arık): searches multi-agent structure per query; 79.9% average over six benchmarks, 7.2 points above the strongest baseline—not ReActNet 2609.05774 or CUAWright 2610.04116.
 
-## 2026-10-05
+- [Inference-Time Graph Engineering for Multi-Agent LLM Workflows](https://arxiv.org/abs/2609.05774)
+  - 中文：Meta ReActNet：给每条边写自然语言指令，六数据集均分 92.75，免训练压过 G-Designer｜不要并进 SHIFT 2610.04137
+  - English: Meta ReActNet: writes a natural-language instruction for every edge; 92.75 average over six datasets, beating G-Designer without training—not SHIFT 2610.04137.
 
-- [Multi-Agent Computer Use](https://arxiv.org/abs/2606.01533)
-  - 中文：CMU 多 agent CUA，Odysseys 8.5→34.0，长程 CUA 默认改编排｜不要并进单 agent GUI grounding，也不绑 CMU A2
-  - English: CMU multi-agent CUA lifts Odysseys 8.5→34.0; long-horizon CUA should rewrite the schedule by default—not single-agent GUI grounding, and not tied to CMU A2.
+- [AECP: Artifact-Exclusive Communication Protocol for Multi-Agent Code Generation](https://arxiv.org/abs/2610.06481)
+  - 中文：AWS AI Labs AECP：agent 只用结构化工件协调写仓库，测通率比自由消息团队 +28.2%｜不要并进 GitSwarm 2610.04862 和 CaMeLs
+  - English: AWS AI Labs AECP: agents coordinate repo writing only through structured artifacts; test pass rate +28.2% over free-messaging teams—not GitSwarm 2610.04862 or CaMeLs.
 
-- [The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams](https://arxiv.org/abs/2608.23541)
-  - 中文：ICML：全解交流一轮抹平多样性，首轮互评 57% 改差｜不要并进「多 agent 一律无用」的等预算否定论
-  - English: ICML: one full-solution exchange flattens diversity; first-round peer review makes 57% worse—not an equal-budget claim that multi-agent is always useless.
+- [PANDA: A Decentralized Architecture with Flexible Orchestration for Scalable, Fault-Tolerant Multi-Agent Systems](https://arxiv.org/abs/2609.38482)
+  - 中文：Northeastern PANDA（Cristina Nita-Rotaru）：去中心发现组队，比 IoA 快约 3×，基础设施故障下完成率 100% 对基线 0｜不要并进 Worse Together 和 ReActNet 2609.05774
+  - English: Northeastern PANDA (Cristina Nita-Rotaru): decentralized discovery and team formation; about 3× faster than IoA, 100% completion under infrastructure failure vs 0 for baselines—not Worse Together or ReActNet 2609.05774.
 
-- [Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227)
-  - 中文：AI2/UW：harness 进化在等预算下 67.4 < 并行采样 72.3｜不要并进 harness 学习类（2609.35738）
-  - English: AI2/UW: under equal budget, harness evolution scores 67.4 vs parallel sampling 72.3—not merged with harness-learning work (2609.35738).
+- [Learning What to Investigate Next: Meta-Reasoning for Long-Horizon Research Agents](https://arxiv.org/abs/2610.02525)
+  - 中文：Meta MIRA（Anirudh Goyal）：外环决定下一步查什么，内环干净执行，IMOProofBench 从 67.1% 到 100%｜不要并进 GitSwarm 2610.04862 和 TeleTune 2610.05437
+  - English: Meta MIRA (Anirudh Goyal): an outer loop decides what to investigate next and an inner loop executes cleanly; IMOProofBench from 67.1% to 100%—not GitSwarm 2610.04862 or TeleTune 2610.05437.
 
-- [Despite Instructions: Frontier Agents Improvise Covert Channels at Test Time](https://arxiv.org/abs/2609.32701)
-  - 中文：1 位反馈就长出隐蔽信道，98.8% vs 25%，监控失效｜不要并进 Covert Assistance 2609.39050
-  - English: One bit of feedback grows a covert channel (98.8% vs 25%); monitoring fails—not merged with Covert Assistance 2609.39050.
+- [CAPMAS: Capability-Based Delegation of Privileges in Multi-Agent Systems](https://arxiv.org/abs/2609.06500)
+  - 中文：EPFL CAPMAS（Rachid Guerraoui）：Macaroon 沿委托链缩权，比 OAuth Token Exchange 快 30×，多余权限砍 99.5%｜不要并进 CaMeLs 和 CISPA 隐空间通信攻击
+  - English: EPFL CAPMAS (Rachid Guerraoui): Macaroons narrow privileges along the delegation chain; 30× faster than OAuth Token Exchange, cutting excess privileges by 99.5%—not CaMeLs or the CISPA latent-communication attack.
 
-- [Trojan Hippo Bench: A Dynamic Benchmark for Persistent Memory Attacks and Defenses in LLM Agents](https://arxiv.org/abs/2605.01970)
-  - 中文：ETH/Berkeley：持久记忆投毒最高 100% ASR，潜伏 100 会话仍生效｜不要并进 ZoneClaw 2610.00450
-  - English: ETH/Berkeley: persistent memory poisoning reaches 100% ASR and still works after 100 dormant sessions—not merged with ZoneClaw 2610.00450.
-
-- [Can Agent Memory Systems Track Evolving State?](https://arxiv.org/abs/2608.19652)
-  - 中文：UIUC：记忆追当前态，准确率 1.8×，状态结构贡献 +15–32｜不要并进 PoS 2610.01415 和长上下文 QA
-  - English: UIUC: memory that tracks the current state gets 1.8× accuracy; state structure adds +15–32—not merged with PoS 2610.01415 or long-context QA.
-
-- [CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas](https://arxiv.org/abs/2604.15267)
-  - 中文：ICML：LLM 单次博弈全背叛，合同机制回收 80% 社会最优｜不要并进单 agent 价值对齐评测
-  - English: ICML: LLMs fully defect in one-shot games; contract mechanisms recover 80% of the social optimum—not single-agent value-alignment evals.
-
-- [When Successful Strategies Fail: Adaptation to Environmental Novelty in Terminal Agents](https://arxiv.org/abs/2609.33870)
-  - 中文：环境新颖性让终端 agent pass@1 84.1→53.4｜不要并进跨榜迁移稿 2610.00890
-  - English: Environmental novelty drops terminal-agent pass@1 from 84.1 to 53.4—not merged with cross-benchmark transfer 2610.00890.
-
-- [SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation](https://arxiv.org/abs/2608.21500)
-  - 中文：EMNLP：token 级 on-policy 蒸馏把自适应注入 ASR 94.0%→9.0%｜不要并进 UCM 和通用 OPD 训练稿
-  - English: EMNLP: token-level on-policy distillation cuts adaptive-injection ASR from 94.0% to 9.0%—not merged with UCM or generic OPD training papers.
-
-- [AgentBoundary: Counterfactual Evaluation of Safety in Tool-Using LLM Agents](https://arxiv.org/abs/2609.33658)
-  - 中文：北大：GPT-5.5 拦越权 99.5%，风险外观授权任务只完成 28.7%｜不要并进对话越狱拒答基准
-  - English: PKU: GPT-5.5 blocks over-privilege at 99.5%, but completes only 28.7% of risk-looking authorized tasks—not a chat jailbreak-refusal bench.
-
-- [Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning](https://arxiv.org/abs/2608.30686)
-  - 中文：EMNLP：投毒 ASR 由用户任务类型决定，跑测试 45.5% vs 修 bug 8.6%｜不要并进 skill 供应链和网页注入
-  - English: EMNLP: poison ASR depends on the user task type—45.5% on running tests vs 8.6% on bugfix—not skill supply-chain or web injection.
-
-- [Harness Learning Enables Generalizable Test-Time Adaptation](https://arxiv.org/abs/2609.35738)
-  - 中文：CMU：训出的 4B harness proposer 在未见任务族上胜过 35B 教师（0.62 vs 0.56）｜不要并进同基准搜索型 harness 进化
-  - English: CMU: a trained 4B harness proposer beats a 35B teacher on unseen task families (0.62 vs 0.56)—not same-benchmark search-style harness evolution.
-
-- [WHALE: A Simple Recipe for Joint Harness-Weight Optimization](https://arxiv.org/abs/2609.00196)
-  - 中文：权重 × harness 交替优化，只用 29% 的 rollout 超过分阶段优化｜不要并进纯提示优化和通用 RLVR
-  - English: Alternating weight×harness optimization beats staged training with only 29% of the rollouts—not pure prompt opt or generic RLVR.
-
-- [Untrusted Content Masking for Web Agents with Security Guarantees](https://arxiv.org/abs/2607.05277)
-  - 中文：ETH：DOM 结构遮蔽不可信区，加强版 WASP 0% ASR｜不要并进训练型注入防御；写清防不了数据流篡改
-  - English: ETH: DOM-structure masking of untrusted regions reaches 0% ASR on a hardened WASP; it does not stop data-flow tampering—not training-time injection defense.
-
-- [FORTIS: Benchmarking Over-Privilege in Agent Skills](https://arxiv.org/abs/2605.09163)
-  - 中文：USC/JHU（Chaowei Xiao）：skill 层本身是越权源，10 个模型选 skill 失败 35.5–52.7%，两段合计成功最多 14.3%｜不要并进 TrustProbe 2609.39065、APEX 2610.01564 和 AgentBoundary 2609.33658
-  - English: USC/JHU (Chaowei Xiao): the skill layer itself is an over-privilege source; 10 models fail skill selection 35.5–52.7%, two-stage success at most 14.3%—not TrustProbe, APEX, or AgentBoundary.
-
-- [FlowBank: Query-Adaptive Agentic Workflows Optimization through Precompute-and-Reuse](https://arxiv.org/abs/2606.11290)
-  - 中文：Furong 组：互补工作流库加路由，比 AFlow 高 3.00 分｜不要并进 FloWright 和 Component Routing
-  - English: Furong group: a complementary workflow bank plus routing beats AFlow by 3.00 points—not FloWright or Component Routing.
-
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://arxiv.org/abs/2605.06614)
-  - 中文：UIUC/Google：skill 策展可以训，8B 胜过 Gemini-2.5-Pro 当策展器｜不要并进 GSO 和 DeFA
-  - English: UIUC/Google: skill curation is trainable; an 8B curator beats Gemini-2.5-Pro—not GSO or DeFA.
-
-- [SWE-chat: Coding Agent Interactions From Real Users in the Wild](https://arxiv.org/abs/2604.20779)
-  - 中文：COLM：真实用户 coding agent 代码只有 59% 进 commit｜不要并进离线 SWE 基准
-  - English: COLM: only 59% of real-user coding-agent code reaches a commit—not offline SWE benches.
-
-- [Benchmarking Open-Ended Multi-Agent Coordination in Language Agents](https://arxiv.org/abs/2606.08340)
-  - 中文：Edinburgh/UCL：LLM 团队协调分逼近 10 亿步 MARL，断通信 17.5→5.3｜不要并进 MACU 和 CoopEval
-  - English: Edinburgh/UCL: LLM team coordination scores approach billion-step MARL; cutting communication drops 17.5→5.3—not MACU or CoopEval.
-
-- [StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing](https://arxiv.org/abs/2608.24777)
-  - 中文：EMNLP：步级执行前护栏，ASR 相对 −77.3%、效用 −2.8｜不要并进 AgentBoundary 评测
-  - English: EMNLP: step-level pre-execution guardrails cut ASR by 77.3% relative with −2.8 utility—not AgentBoundary eval.
-
-- [CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents](https://arxiv.org/abs/2607.05378)
-  - 中文：清华：压缩上下文的 agent RL，SWE-V 比推理时压缩高 +6.6｜不要并进通用长上下文和 RLVR 训练稿
-  - English: Tsinghua: agent RL with context compaction beats inference-time compaction by +6.6 on SWE-V—not generic long-context or RLVR training papers.
-
-- [Can Agents Trust Their Skills? Uncovering Unsafe Chains of Trust in Skill-Based LLM Agents](https://arxiv.org/abs/2609.39065)
-  - 中文：中科院信工所：skill 准入通道本身是漏洞，直接提示只复现 31.7%｜不要并进 APEX 2610.01564 和仓库投毒
-  - English: CAS IIE: the skill admission channel itself is a vulnerability; direct prompting only reproduces 31.7%—not APEX 2610.01564 or repo poisoning.
-
-- [VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks](https://arxiv.org/abs/2609.23570)
-  - 中文：SIAT/阿里：coding agent 记忆增益 1.1–4.5 分，置信区间全跨零｜不要并进 StateMemBench 和对话记忆榜
-  - English: SIAT/Alibaba: coding-agent memory gains 1.1–4.5 points with CIs that all cross zero—not StateMemBench or dialogue-memory boards.
-
-- [How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text](https://arxiv.org/abs/2609.40295)
-  - 中文：UMD/Mohit Iyyer：800 个模型测出数据充足后 AI 网页 token 价值为负，新 scaling law 外推误差低 41%｜不要并进 FinePhrase（2604.13977）和 model-collapse 研究
-  - English: UMD/Mohit Iyyer: across 800 models, AI web tokens turn negative once data is plentiful; a new scaling law cuts extrapolation error 41%—not FinePhrase or model-collapse work.
-
-- [Broken Symmetry in BF16 Attention: Why FlashAttention Gradients Blow Up Late in Training](https://arxiv.org/abs/2609.34272)
-  - 中文：Rutgers/CMU（Eric Xing）：BF16 FA3 梯度泄漏均值 key，GProj 把 q 梯度误差 219%→0.34%｜不要并进 Muon / 学习率类不稳定研究
-  - English: Rutgers/CMU (Eric Xing): BF16 FA3 gradients leak the mean key; GProj cuts q-gradient error from 219% to 0.34%—not Muon or LR-instability work.
-
-- [Do We Really Need KL Divergence for On-Policy Distillation of Large Language Models?](https://arxiv.org/abs/2609.33791)
-  - 中文：清华 LeapLab/黄高：OPD 用方向 ±1 即可复现 KL，<1.5% 高分歧 token 决定成败｜不要并进 2609.35259 和 2610.02179
-  - English: Tsinghua LeapLab/Gao Huang: OPD with ±1 direction recovers KL; <1.5% high-disagreement tokens decide outcomes—not 2609.35259 or 2610.02179.
-
-- [EasyPPO: Stabilizing the Critic Is Key](https://arxiv.org/abs/2609.36802)
-  - 中文：Berkeley/Princeton：PPO 不稳源于 critic，actor-only 过滤 + 噪声归一化后三种子零崩溃｜不要并进 Trust the Critic More（2609.39247）
-  - English: Berkeley/Princeton: PPO instability comes from the critic; actor-only filtering plus noise normalization yields zero crashes across three seeds—not Trust the Critic More.
-
-- [How Can We Synthesize High-Quality Pretraining Data? A Systematic Study of Prompt Design, Generator Model, and Source Data](https://arxiv.org/abs/2604.13977)
-  - 中文：Hugging Face，COLM 2026：合成预训练改写器 1B 反超 27B，FinePhrase 生成成本降 30×｜不要并进野生 AI 文本研究（2609.40295）和 PPT（2609.39827）
-  - English: Hugging Face, COLM 2026: a 1B synthetic pretraining rewriter beats a 27B; FinePhrase cuts generation cost 30×—not wild AI-text work or PPT.
-
-- [Trust the Critic More](https://arxiv.org/abs/2609.39247)
-  - 中文：Stanford/Tengyu Ma：critic 就绪后截断 rollout，达到 GRPO 峰值少用 2.5× 解码 FLOPs｜不要并进 EasyPPO（2609.36802）
-  - English: Stanford/Tengyu Ma: truncate rollouts once the critic is ready; reach GRPO peak with 2.5× fewer decode FLOPs—not EasyPPO.
-
-- [The Quality-Utility Paradox: Why High-Reward Data Impairs Small Model Mathematical Reasoning](https://arxiv.org/abs/2606.16152)
-  - 中文：清华深研院/MSRA，ICML 2026：RM 分更高的 Oracle 蒸馏数据，小模型反而学得更差｜不要并进 KL-free OPD（2609.33791）和偏好蒸馏 reject 研究
-  - English: Tsinghua AIR/MSRA, ICML 2026: higher-RM Oracle distillation data makes small models learn worse—not KL-free OPD or preference-distill reject work.
 
 ## 关于 · About
 
